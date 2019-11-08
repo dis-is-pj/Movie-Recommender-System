@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-  <h1>Welcome to the Movie recommendor</h1>
-  <h3>Enter the movie name you like to get recommendations.</h3>
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <h1 style="color:rgb(0, 102, 255)">Welcome to the Movie recommendor</h1>
+  <h3 style="color:rgb(0, 102, 255)">Enter the Hollywood movie you like to get recommendations.</h3>
+</div>
+
   <form action="{{url_for('recommend')}}">
-    <label for="movie">Movie You like: </label>
-    <input type="text" name="movie">
-    <input type="submit" value="Enter">
+    <input type="text" name="movie" class="form-control" placeholder="Movie name here">
+    <br>
+    <input type="submit" class="btn btn-info" value="Enter">
   </form>
 {% endblock %}

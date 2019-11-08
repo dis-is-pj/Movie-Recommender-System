@@ -10,21 +10,31 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="container">
     <nav class="navbar navbar-light bg-light">
-      <h3><a class="nav-link" href="{{url_for('home')}}">Home</a></h3>
+      <h3><a style="color:rgb(0, 102, 255)" class="nav-link" href="{{url_for('home')}}">Home</a></h3>
     </nav>
-    <div class="jumbotron">
-      {% block content %}
-      {% endblock %}
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="/static/profile.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Prashant Jha</h5>
-        <p class="card-text">I'm a Data Science enthusiast who loves to play with machine learning.</p>
-        <p>Click the link below to know about me!</p>
-        <a href="https://www.linkedin.com/in/prashant-jha-10ab3a142/" class="btn btn-primary" target="_blank">Linkedin Profile</a>
+
+      <div class="jumbotron">
+        {% block content %}
+        {% endblock %}
       </div>
+
+    <div class="card mb-3" style="max-width: 650px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="/static/profile.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Prashant Jha</h5>
+            <p class="card-text">I'm a Data Science enthusiast who loves to play with machine learning.</p>
+            <p>Click the link below to know about me!</p>
+            <a href="https://www.linkedin.com/in/prashant-jha-10ab3a142/" class="btn btn-primary" target="_blank">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
