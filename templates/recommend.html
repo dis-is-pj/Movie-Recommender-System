@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  {% if t=='s' %}
+    <h3>Sorry! This movie is not in our database.</h3>
+    <h3>Please check if you spelled it correct.</h3>
+    <h3>Or try with another movie.</h3>
+  {% else %}
+    <h1>"{{movie}}" is a great choice.</h1>
+    <h3>Here are some more like this</h3>
+    <ul>
+      {% for m in r %}
+        <li>{{m|capitalize}}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+{% endblock %}

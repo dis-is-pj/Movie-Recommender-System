@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Welcome to the Movie recommendor</h1>
+  <h3>Enter the movie name you like to get recommendations.</h3>
+  <form action="{{url_for('recommend')}}">
+    <label for="movie">Movie You like: </label>
+    <input type="text" name="movie">
+    <input type="submit" value="Enter">
+  </form>
+{% endblock %}
