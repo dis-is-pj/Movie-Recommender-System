@@ -4,6 +4,8 @@ Link to dataset :- https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset
 
 Link to the web application :- https://recommendor-system.herokuapp.com/
 
+I also wrote a blog about this project which help you understand the overall process :- https://www.academyofdatascience.com/blog-by-prashant/
+
 I used Flask web framework in built in Python to put in on web.
 
 # Files Brief
